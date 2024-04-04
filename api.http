@@ -1,0 +1,30 @@
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+    "title": "Unite NWL 23",
+    "details": "detalhes do node",
+    "maximumAttendees": 100
+}
+
+
+###
+POST http://localhost:3000/events/441c9cc1-1425-45a6-a4e3-4bef5de990f1/attendees
+Content-Type: application/json
+
+{
+    "name": "Ryan Rafaelsviesk",
+    "email": "ryadasn@gmail.com"
+}
+
+### 
+GET http://localhost:3000/events/441c9cc1-1425-45a6-a4e3-4bef5de990f1
+
+### 
+GET http://localhost:3000/attendees/3/badge
+
+### 
+GET http://localhost:3000/attendees/1/check-in
+
+###
+GET http://localhost:3000/events/441c9cc1-1425-45a6-a4e3-4bef5de990f1/attendees?query=Rafaelsviesk
